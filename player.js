@@ -123,18 +123,10 @@ function chrono(){
     document.getElementById("chronotime").style.color="red";
     document.getElementById("chronotime").style.fontSize="30px";
   }
-  if (sec >= 20) {
-    lose();
-  }
-	if (sec < 10){
-		sec = "0" + sec;
-	}
-	if(msec < 10){
-		msec = "00" +msec;
-	}
-	else if(msec < 100){
-		msec = "0" +msec;
-	}
+  if (sec >= 20) { lose(); }
+	if (sec < 10){ sec = "0" + sec; }
+	if(msec < 10){ msec = "00" +msec; }
+	else if(msec < 100){ msec = "0" +msec; }
 	document.getElementById("chronotime").innerHTML = sec + ":" + msec;
 	timerID = setTimeout("chrono()", 1);
 }

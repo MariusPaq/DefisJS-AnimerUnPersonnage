@@ -3,19 +3,8 @@ p{font-family: 'Press Start 2P', cursive;color: white;text-align: center;}
 .row{width: 100%;}
 .time{width: 10%;}
 #chronotime ,#score{margin-top: 50%;}
-#gameContainer{
-  width: 800px;height: 800px;
-  background-image: url('img/herbe.jpg');background-size: 5%;
-  margin-left: auto;margin-right: auto;margin-top: 10px;
-  position:relative;
-  overflow: hidden;}
-#player{
-  width: 40px;height: 40px;
-  background-image: url('img/1.png');background-size: 100%;background-position: center;
-  position:absolute;
-  z-index: 2;}
-#goal{
-  width: 40px;height: 40px;
-  background-image: url('img/goal.png');background-size: 100%;background-position: center;
-  position:absolute;
-  z-index: 3;}
+#gameContainer{width: 800px;height: 800px;background-image: url('img/herbe.jpg');background-size: 5%;
+  margin-left: auto;margin-right: auto;margin-top: 10px;position:relative; overflow: hidden;}
+#player{background-image: url('img/1.png');z-index: 2;}
+#goal{background-image: url('img/goal.png');z-index: 3;}
+#player,#goal{width: 40px;height: 40px;background-size: 100%;background-position: center;position:absolute;}
